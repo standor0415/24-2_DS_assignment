@@ -1,0 +1,22 @@
+Describe your explanation about below simple rendering functions.
+
+1. barycentric_coords: 
+vo, v1, v2를 꼭짓점으로 가지는 삼각형에 대해 P가 꼭짓점에 대비해 어디에 위치하는지 return해준다.
+2. bounding_box: 
+v0, v1, v2로 이루어진 삼각형의 bounding 박스를 x, y좌표로 return해준다.
+3. scaled_vertices: 
+v0, v1, v2를 width와 height에 맞게 scaling해준다.
+4. scaled_texture_vertices: 
+texture 좌표를 texture의 크기에 맞게 scaling해준다.
+5. normal_vectors: 
+v0, v1, v2로 이뤄진 삼각형에 대해 법선 벡터를 정규화해서 반환해준다.
+6. render_line: 
+start와 end 사이에 직선 그려준다.
+7. draw_triangle: 
+render_line을 통해 세변을 생성하여 삼각형을 만든다.
+8. shade_triangle_texture: 
+barycentric_coords를 사용해서 texture pixel과 밝기값을 Interpolation해준다.
+9. shade_triangle: 
+삼각형의 법선벡터를 이용해 조명을 강도를 계산하고 색상을 계산한다.
+10. render_shaded: 
+모든 삼각형을 렌더링하는데 texture의 유무에 따라 구분해서 렌더링한다.
